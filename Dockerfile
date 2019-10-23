@@ -7,6 +7,7 @@ RUN apt-get update \
  && apt-get install -y --no-install-recommends \
         libxtst6 \
         wget \
+        git \
  \
  && wget "$DOWNLOAD_URL" -O /tmp/intellij-ultimate.tar.gz \
  && mkdir /app \
