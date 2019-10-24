@@ -39,8 +39,8 @@ RUN apt-get update \
  && apt-get autoclean -y \
  && apt-get autoremove -y
 
-RUN cd /tmp && wget http://www-us.apache.org/dist/tomcat/tomcat-9/v9.0.26/bin/apache-tomcat-9.0.26.tar.gz
-RUN cd /tmp && tar xzf apache-tomcat-9.0.26.tar.gz && mv apache-tomcat-9.0.26 /usr/local/apache-tomcat9
+RUN cd /tmp && wget http://mirrors.hostingromania.ro/apache.org/tomcat/tomcat-9/v9.0.27/bin/apache-tomcat-9.0.27.tar.gz
+RUN cd /tmp && tar xzf apache-tomcat-9.0.27.tar.gz && mv apache-tomcat-9.0.27 /usr/local/apache-tomcat9
 
 # SET USER
 USER $DOCKER_USERNAME
