@@ -35,7 +35,6 @@ RUN apt-get update \
         wget \
  \
  && rm -rf /tmp/* \
- && apt-get remove wget -y \
  && apt-get clean -y \
  && apt-get autoclean -y \
  && apt-get autoremove -y
