@@ -20,28 +20,6 @@ RUN apt-get update \
  && apt-get autoclean -y \
  && apt-get autoremove -y
 
-RUN apt-get update \
- && apt-get install -y --no-install-recommends \
-        tomcat9 \
- \
- && rm -rf /tmp/* \
- && apt-get remove wget -y \
- && apt-get clean -y \
- && apt-get autoclean -y \
- && apt-get autoremove -y
-
-RUN apt-get update \
- && apt-get install -y --no-install-recommends \
-        wget \
- \
- && rm -rf /tmp/* \
- && apt-get clean -y \
- && apt-get autoclean -y \
- && apt-get autoremove -y
-
-RUN cd /tmp && wget http://mirrors.hostingromania.ro/apache.org/tomcat/tomcat-9/v9.0.27/bin/apache-tomcat-9.0.27.tar.gz
-RUN cd /tmp && tar xzf apache-tomcat-9.0.27.tar.gz && mv apache-tomcat-9.0.27 /usr/local/apache-tomcat9
-
 # SET USER
 USER $DOCKER_USERNAME
 
