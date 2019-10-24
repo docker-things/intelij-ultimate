@@ -20,6 +20,16 @@ RUN apt-get update \
  && apt-get autoclean -y \
  && apt-get autoremove -y
 
+RUN apt-get update \
+ && apt-get install -y --no-install-recommends \
+        tomcat9 \
+ \
+ && rm -rf /tmp/* \
+ && apt-get remove wget -y \
+ && apt-get clean -y \
+ && apt-get autoclean -y \
+ && apt-get autoremove -y
+
 
 # SET USER
 USER $DOCKER_USERNAME
