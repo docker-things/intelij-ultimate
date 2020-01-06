@@ -14,7 +14,7 @@ PROJECT_NAME="intellij-ultimate"
 
 # BUILD ARGS
 BUILD_ARGS=(
-    --build-arg DOWNLOAD_URL="https://download-cf.jetbrains.com/idea/ideaIU-2019.2.3.tar.gz"
+    --build-arg DOWNLOAD_URL="https://download-cf.jetbrains.com/idea/ideaIU-2019.3.1.tar.gz"
     )
 
 # LAUNCH ARGS
